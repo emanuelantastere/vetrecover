@@ -1,0 +1,164 @@
+:root {
+  --ink: #203a35;
+  --line: #dfe9e2;
+  --canvas: #f4f7f4;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+button, input, select, textarea { font: inherit; }
+button { transition: background-color .16s ease, border-color .16s ease, box-shadow .16s ease, transform .16s ease; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #80b7a4;
+  outline-offset: 2px;
+}
+
+.sidebar { background: #fbfdfb; border-color: var(--line); }
+.brand { font-size: 22px; }
+.clinic-switch { min-height: 68px; border-color: var(--line); background: #fff; }
+.clinic-copy b { font-size: 13px; }
+.clinic-copy span { font-size: 11px; }
+.nav-caption { font-size: 10px; }
+.nav-item { min-height: 44px; font-size: 14px; }
+.nav-item.active { background: #e7f2eb; color: #176957; }
+.nav-item:hover { background: #eef5ef; }
+.nav-count { min-width: 24px; min-height: 24px; font-size: 11px; }
+
+.topbar { height: 62px; }
+.breadcrumbs { font-size: 12px; }
+.content { padding-top: 35px; }
+.welcome-row h1 { font-size: 29px; line-height: 1.2; }
+.subtitle { font-size: 14px; line-height: 1.5; }
+.eyebrow { font-size: 10px; }
+.demo-banner, .intelligence-not-ready, .intelligence-review { font-size: 12px; line-height: 1.6; padding: 11px 14px; }
+.header-controls select, .header-controls .period-label { min-height: 40px; font-size: 13px; }
+.primary-button, .secondary-button { min-height: 42px; padding-inline: 15px; font-size: 13px; }
+
+.metric-card { min-height: 140px; padding: 18px; border-color: var(--line); box-shadow: 0 2px 8px #24453608; }
+.metric-top { font-size: 12px; }
+.metric-card > strong { font-size: 27px; }
+.metric-bottom, .metric-context, .metric-description { font-size: 11px; }
+.metric-description { line-height: 1.5; }
+.panel { border-color: var(--line); border-radius: 11px; box-shadow: 0 3px 12px #24453608; }
+.panel-heading { min-height: 76px; padding: 18px 20px; }
+.heading-title { font-size: 16px; }
+.panel-heading p { font-size: 12px; line-height: 1.5; }
+.text-button, .panel-footer { min-height: 42px; font-size: 12px; }
+.table-tools { gap: 10px; padding: 13px 16px; }
+.table-tools > select, .search input { min-height: 40px; font-size: 12px; }
+.search { min-height: 40px; }
+.opportunity-row { min-height: 76px; padding: 12px 16px; }
+.pet-details b, .opportunity-reason b, .opportunity-value b { font-size: 13px; }
+.pet-details small, .opportunity-reason small, .opportunity-value small { font-size: 11px; line-height: 1.45; }
+.status { font-size: 10px; padding: 6px 8px; }
+.empty-state { padding: 28px 16px; font-size: 13px; line-height: 1.6; }
+
+.activity-row { min-height: 64px; padding: 12px 18px; }
+.activity-copy b { font-size: 13px; }
+.activity-copy span, .activity-row time { font-size: 11px; }
+.contact-scheduled, .contact-history { padding: 20px 22px; }
+.contact-scheduled > b, .contact-history > b { font-size: 14px; }
+.contact-event { min-height: 68px; padding: 12px 8px; }
+.contact-event .activity-copy b { font-size: 13px; }
+.contact-event .activity-copy span, .contact-event time { font-size: 12px; }
+
+.detail-modal { width: min(100%, 600px); padding: 30px; border: 1px solid var(--line); }
+.detail-modal h2 { font-size: 24px; }
+.detail-value { padding: 17px; }
+.detail-value small, .detail-source p { font-size: 13px; line-height: 1.65; }
+.detail-source > b { font-size: 14px; }
+.detail-source small, .attribution-note { font-size: 11px; line-height: 1.6; }
+.modal-actions { gap: 9px; }
+.opportunity-action-form { gap: 13px; padding: 16px; }
+.opportunity-action-form > b { font-size: 14px; }
+.opportunity-action-form label { gap: 7px; font-size: 13px; }
+.opportunity-action-form input, .opportunity-action-form textarea { min-height: 42px; padding: 10px 12px; }
+.opportunity-action-form textarea { min-height: 88px; }
+.opportunity-action-form small { font-size: 11px; }
+
+.import-not-ready, .import-message, .import-counts span, .mapping-list > b,
+.mapping-list label, .mapping-update, .file-selection, .error-text { font-size: 12px; }
+.import-not-ready { padding: 13px 15px; }
+.import-counts > div { padding: 12px; }
+.import-counts b { font-size: 20px; }
+.mapping-list { gap: 10px 14px; }
+.mapping-list label { grid-template-columns: minmax(90px, 1fr) minmax(140px, 1.25fr); }
+.mapping-list select, .table-scroll th select { min-height: 38px; font-size: 12px; padding-inline: 9px; }
+.upload-zone { min-height: 96px; padding: 18px; }
+.upload-zone b { font-size: 13px; }
+.upload-zone small, .preview-title small { font-size: 11px; }
+.preview-title b { font-size: 13px; }
+table { font-size: 12px; }
+th, td { padding: 10px 12px; }
+
+.auth-form > label { font-size: 13px; }
+.auth-form input { min-height: 44px; font-size: 15px; }
+.auth-form label small, .auth-switch, .auth-privacy { font-size: 11px; }
+.auth-notice { font-size: 12px; }
+.system-card p { font-size: 13px; }
+.loading-label { font-size: 13px; }
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .sidebar { width: 214px; padding: 18px 12px; }
+  .workspace { margin-left: 214px; }
+  .brand > span:last-child, .chevron, .nav-caption,
+  .nav-item > span:not(.nav-icon), .privacy, .dots { display: initial; }
+  .clinic-copy { display: flex; }
+  .brand { padding: 2px 8px 22px; }
+  .clinic-switch { justify-content: flex-start; margin-bottom: 22px; }
+  .main-nav { gap: 4px; }
+  .nav-item { justify-content: flex-start; padding-inline: 10px; }
+  .nav-item > span:not(.nav-icon) { display: inline; }
+  .nav-icon { font-size: 17px; }
+  .profile { justify-content: flex-start; }
+  .sign-out-button { width: auto; height: auto; padding: 7px 9px; font-size: 11px; }
+  .sign-out-button::after { content: none; }
+}
+
+@media (max-width: 600px) {
+  .content { padding-top: 24px; }
+  .welcome-row h1 { font-size: 25px; }
+  .subtitle { font-size: 13px; }
+  .metric-card { min-height: 125px; padding: 12px; }
+  .metric-top { font-size: 11px; }
+  .metric-card > strong { font-size: 22px; }
+  .panel-heading { padding: 14px; }
+  .table-tools > select { max-width: 115px; font-size: 11px; }
+  .opportunity-row { min-height: 64px; padding: 9px; }
+  .pet-details b, .opportunity-reason b { font-size: 11px; }
+  .pet-details small, .opportunity-reason small { font-size: 10px; }
+  .status { font-size: 9px; }
+  .detail-modal { padding: 23px 18px; }
+  .modal-actions > * { min-height: 42px; }
+  .mapping-list { grid-template-columns: 1fr; }
+  .mapping-list label { grid-template-columns: minmax(86px, 1fr) minmax(130px, 1.25fr); }
+  .contact-scheduled, .contact-history { padding: 16px 13px; }
+}
+
+
+.nav-short-label { display: none; }
+.top-actions .sign-out-button { margin-right: 4px; }
+
+@media (max-width: 600px) {
+  .sidebar { width: 100%; height: auto; inset: auto 0 0; padding: 6px 0 max(6px, env(safe-area-inset-bottom)); border: 0; border-top: 1px solid var(--line); box-shadow: 0 -4px 16px #24453610; }
+  .sidebar > .brand, .sidebar > .clinic-switch, .sidebar > .nav-caption, .sidebar > .sidebar-bottom { display: none; }
+  .main-nav { display: flex; gap: 2px; overflow-x: auto; overscroll-behavior-x: contain; padding: 0 6px; scrollbar-width: thin; }
+  .main-nav .nav-item { flex: 0 0 58px; min-width: 58px; min-height: 52px; height: 52px; display: flex; flex-direction: column; justify-content: center; gap: 1px; padding: 4px 2px; border-radius: 8px; font-size: 11px; }
+  .main-nav .nav-icon { display: block; width: auto; font-size: 17px; line-height: 1.2; }
+  .main-nav .nav-full-label { display: none; }
+  .main-nav .nav-short-label { display: block; font-size: 10px; white-space: nowrap; }
+  .main-nav .nav-count { position: absolute; margin: -28px 0 0 29px; min-width: 17px; min-height: 17px; padding: 0 4px; font-size: 9px; }
+  .workspace { margin-left: 0; padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+  .top-actions { gap: 8px; }
+  .top-actions .sign-out-button { min-height: 40px; }
+  .top-avatar { width: 36px; height: 36px; }
+}
+
+.top-actions .sign-out-button { display: none; }
+@media (max-width: 600px) { .top-actions .sign-out-button { display: inline-flex; } }
+

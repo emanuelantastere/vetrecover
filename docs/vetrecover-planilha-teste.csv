@@ -1,0 +1,21 @@
+client id,customer name,email,phone,pet id,pet name,species,quote id,quote amount,quote status,quote date,quote expiration,quote description,appointment id,appointment date,appointment status,appointment service,appointment amount
+CLI001,Ana Teste,ana.teste@example.invalid,5511990000001,PET001,Luna,Dog,ORC001,850.00,pending,2026-10-10,2026-10-15,Expired pending quote,,,,,
+CLI002,Bruno Teste,bruno.teste@example.invalid,5511990000002,PET002,Mel,Cat,ORC002,1500.00,pending,2026-10-15,2026-10-30,High value pending quote,,,,,
+CLI003,Caio Teste,caio.teste@example.invalid,5511990000003,PET003,Thor,Dog,ORC003,420.00,pending,2026-10-18,2026-10-28,Recent pending quote,,,,,
+CLI004,Dora Teste,dora.teste@example.invalid,5511990000004,PET004,Nina,Cat,ORC004,620.50,pending,2026-10-12,,Older pending quote,,,,,
+CLI005,Eli Teste,eli.teste@example.invalid,5511990000005,PET005,Bidu,Dog,ORC005,780.00,accepted,2026-10-01,2026-10-15,Accepted quote,,,,,
+CLI006,Fabi Teste,fabi.teste@example.invalid,5511990000006,PET006,Amora,Cat,ORC006,310.00,declined,2026-09-20,2026-10-05,Declined quote,,,,,
+CLI007,Gabi Teste,gabi.teste@example.invalid,5511990000007,PET007,Max,Dog,ORC007,990.00,expired,2026-09-01,2026-09-15,Expired quote,,,,,
+CLI008,Hugo Teste,hugo.teste@example.invalid,5511990000008,PET008,Kiwi,Bird,ORC008,2750.00,pending,2026-04-01,2026-04-20,Old pending quote,,,,,
+CLI009,Iris Teste,iris.teste@example.invalid,5511990000009,PET009,Pacoca,Dog,ORC009,1200.00,pending,2026-10-17,2026-10-25,First quote for same client,,,,,
+CLI009,Iris Teste,iris.teste@example.invalid,5511990000009,PET009,Pacoca,Dog,ORC010,540.00,pending,2026-10-18,2026-10-28,Second quote for same client,,,,,
+CLI010,Jo Teste,jo.teste@example.invalid,5511990000010,PET010,Zeca,Reptile,ORC011,320.00,pending,2026-10-19,2026-11-01,Issued today,,,,,
+CLI011,Kai Teste,kai.teste@example.invalid,5511990000011,PET011,Sol,Dog,ORC012,0.00,pending,2026-10-14,2026-10-28,Zero value quote,,,,,
+CLI012,Lia Teste,lia.teste@example.invalid,5511990000012,PET012,Tico,Cat,,,,,,,ATD013,2026-10-15,completed,Clinical follow-up,180.00
+CLI013,Mia Teste,mia.teste@example.invalid,5511990000013,PET013,Ozzy,Dog,,,,,,,ATD014,2026-10-10,completed,Post-surgery review,340.00
+CLI014,Nico Teste,nico.teste@example.invalid,5511990000014,PET014,Flor,Rabbit,,,,,,,ATD015,2026-03-01,completed,Consultation,220.00
+CLI015,Olga Teste,olga.teste@example.invalid,5511990000015,PET015,Simba,Cat,,,,,,,ATD016,2025-07-01,completed,Old consultation,160.00
+CLI016,Paco Teste,paco.teste@example.invalid,5511990000016,PET016,Mel,Dog,,,,,,,ATD017,2026-10-19,completed,Today's consultation,200.00
+CLI017,Queli Teste,queli.teste@example.invalid,5511990000017,PET017,Blue,Bird,,,,,,,ATD018,2026-09-01,scheduled,Upcoming consultation,140.00
+CLI018,Rui Teste,rui.teste@example.invalid,5511990000018,PET018,Lola,Cat,,,,,,,ATD019,2026-09-01,cancelled,Cancelled consultation,120.00
+CLI019,Sara Teste,sara.teste@example.invalid,5511990000019,PET019,Bob,Dog,ORC020,1100.00,pending,2026-10-16,2026-10-30,Quote plus appointment,ATD020,2026-10-15,completed,Follow-up and quote,250.00

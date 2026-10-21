@@ -1,0 +1,24 @@
+export type Priority = "low" | "medium" | "high";
+export type OpportunityCandidate = {
+  opportunity_type: "pending_quote" | "overdue_follow_up" | "inactive_client";
+  source_record_type: "quote" | "appointment";
+  source_record_id: string;
+  quote_id?: string;
+  appointment_id?: string;
+  client_id?: string;
+  potential_value: number | null;
+  value_source: string | null;
+  source_occurred_at: string;
+  priority: Priority;
+  priority_reason: string;
+  data_quality: "complete" | "review";
+  data_quality_notes: string | null;
+  recommendation_reason: string;
+  recommended_action: string;
+};
+export function evaluatePendingQuote(quote: Record<string, unknown>, options?: { asOf?: Date | string; ambiguous?: boolean }): { candidate: OpportunityCandidate | null; review: { type: string; reason: string } | null };
+export function evaluateCompletedAppointment(appointment: Record<string, unknown>, options?: { asOf?: Date | string; ambiguous?: boolean; followUpDays?: number; inactiveDays?: number }): { candidate: OpportunityCandidate | null; review: { type: string; reason: string } | null };
+export function evaluateInactiveClient(client: { id: string } | null, events: Array<Record<string, unknown>>, options?: { asOf?: Date | string; inactiveDays?: number; ambiguous?: boolean }): { candidate: OpportunityCandidate | null; review: { type: string; client_id: string | null; reason: string } | null };
+export function deduplicateCandidates(candidates: Array<(OpportunityCandidate & { clinic_id?: string }) | null>): Array<OpportunityCandidate & { clinic_id?: string }>;
+export function validateOpportunityAction(currentStatus: string, targetStatus: string, options?: { reason?: string; confirmedRevenue?: number | null; evidenceReference?: string }): { valid: boolean; error: string | null };
+export function calculateFinancialTotals(opportunities: Array<Record<string, unknown>>, actions: Array<Record<string, unknown>>, clinicId?: string | null): { pendingPotential: number; confirmedRevenue: number; attributedRevenue: 0 };
